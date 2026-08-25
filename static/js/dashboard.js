@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (state === "loading" && window.getTradingSpinnerHTML) {
             chatMessage.innerHTML = window.getTradingSpinnerHTML({
                 size: 'sm',
-                text: 'Stratix AI is analyzing market context...',
+                text: 'GetStockIQ is analyzing market context...',
                 centered: false
             });
             askAiAnswer.append(chatMessage);
@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
-    async function askStratix(question) {
+    async function askGetStockIQ(question) {
         if (!question || !askAiForm) {
             return;
         }
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
         submitButton.disabled = true;
         addChatMessage(question, "user");
         const loadingMessage = addChatMessage(
-            "Stratix AI is checking the latest market context...",
+            "GetStockIQ is checking the latest market context...",
             "bot",
             "loading"
         );
@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             askAiQuestion.value = "";
-            askStratix(question);
+            askGetStockIQ(question);
         });
     }
 

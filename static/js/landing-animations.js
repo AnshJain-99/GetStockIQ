@@ -1,5 +1,5 @@
 /**
- * Stratix AI — Landing Page Interactive & Entrance Animations
+ * GetStockIQ — Landing Page Interactive & Entrance Animations
  * Handles:
  * 1. Number counting up from 0 on reveal
  * 2. SVG line chart automatic drawing
